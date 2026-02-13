@@ -49,7 +49,7 @@ li{
    padding-top: 160px;
    line-height: 3rem;
    background-image: url(asset/images/francesca-tosolini-tHkJAMcO3QE-unsplash.jpg);
-   filter: blur(10px);
+   filter: blur(2px);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
