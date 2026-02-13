@@ -57,7 +57,7 @@ li{
 
 .sub-home page{
     background-color: rgb(173, 29, 29);
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 
@@ -68,7 +68,7 @@ li{
     color: white;  
 }
 .home-page p{
- color: red;
+ color: white;
  font-weight: 900;
 }
 
