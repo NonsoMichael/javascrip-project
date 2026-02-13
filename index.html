@@ -8,26 +8,28 @@
 </head>
 <body>
     <header>
-        <h2>BULLWALK FURNITURE</h2>
+        <h2>NONSO & SON's FURNITURE</h2>
         <nav class="navbar">
             <ul id="menu">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#Shop">Shop</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Contact">Contact</a></li>
-                 <li><a href="#" class="cart-icon">Cart (0)</a></li>
+                <div class="cart-icon" onclick="toggleCart()">
+                 🛒<span class="cart-count" id="cartCount">0</span>
+               </div>
             </ul>
         </nav>
 
-         
-         
-
     </header>
+    
+
     <section class="home-page" >
         <h1>Modern & Comfortable Furniture</h1>
         <p>Make your home a place of luxury with our collections</p>
         <button class="btn-explore">Explore Collections</button>
    </section>
+
 
    <section class="products">
        <h2>Our Products</h2>
@@ -35,48 +37,65 @@
 
         <div class="product">
             <img src="asset/images/lucas-de-moura-uNZpPRPEnY4-unsplash.jpg" alt="sofa1-logo" width="500" height="250">
-            <h3>Sofa</h3>
+            <h3>Sofa type1</h3>
             <p>$500</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" onclick="addToCart('Sofa type1')">Add to Cart</button>
+            
         </div>
         <div class="product">
             <img src="asset/images/mindspace-studio-UrrYymj6R80-unsplash.jpg" alt="sofa2-logo" width="500" height="250">
-            <h3>Sofa</h3>
+            <h3>Sofa type2 </h3>
             <p>$700</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" onclick="addToCart('Sofa type2')">Add to Cart</button>
+           
         </div>
 
         <div class="product">
             <img src="asset/images/carl-beech-m-LDZcYi5o4-unsplash.jpg" alt="chair1-logo" width="500" height="250">
-            <h3>Chair</h3>
+            <h3>Chair type1</h3>
             <p>$200</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" onclick="addToCart('Chair type1')">Add to Cart</button>
+            
         </div>
-        <div>
-            <img src="asset/images/brandon-cormier-YiHRQ8mKrKk-unsplash.jpg" alt="chai2r-logo" width="500" height="250">
-           <h3>Chair</h3>
+
+        <div class="product">
+            <img src="asset/images/brandon-cormier-YiHRQ8mKrKk-unsplash.jpg" alt="chair2-logo" width="500" height="250">
+            <h3>Chair type2</h3>
             <p>$300</p>
-            <button class="add-to-cart">Add to Cart</button> 
+            <button class="add-to-cart" onclick="addToCart('chair type2')">Add to Cart</button> 
+            
         </div>
 
         <div class="product">
             <img src="asset/images/alvin-engler-bIhpiQA009k-unsplash.jpg" alt="table1-logo" width="500" height="250">
-            <h3>Table</h3>
+            <h3>Table type1</h3>
             <p>$300</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="asset/images/andy-illarionov--WW8jBak7bo-unsplash.jpg" alt="table2-logo" width="500" height="250">
-            <h3>Table</h3>
-            <p>$500</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" onclick="addToCart('Table type1')">Add to Cart</button>
+            
         </div>
 
-   </section>
+        <div class="product">
+            <img src="asset/images/andy-illarionov--WW8jBak7bo-unsplash.jpg" alt="table2-logo" width="500" height="250">
+            <h3>Table type 2</h3>
+            <p>$500</p>
+            <button class="add-to-cart" onclick="addToCart('Table type2')">Add to Cart</button>
+            
+        </div>
+
+        <!-- Cart Modal -->
+        <div class="cart-modal" id="cartModal">
+           <div class="cart-content">
+            <h3>Your Cart</h3>
+            <div id="cartItems" class="cartItems"></div>
+            <button onclick="toggleCart()" class="close-btn">Close</button>
+        </div>
+    </div>
+</section>
+    
 
  
  <footer>
-     <nav>
+        <nav>
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#Shop">Shop</a></li>
