@@ -49,11 +49,15 @@ li{
    padding-top: 160px;
    line-height: 3rem;
    background-image: url(asset/images/francesca-tosolini-tHkJAMcO3QE-unsplash.jpg);
-   filter: blur(2px);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    margin-bottom: 20px;
+}
+
+.sub-home page{
+    background-color: rgb(173, 29, 29);
+    opacity: 0.5;
 }
 
 
@@ -61,7 +65,7 @@ li{
 .home-page h1{
     font-weight: bolder;
     font-size: xx-large;
-    color: red;  
+    color: white;  
 }
 .home-page p{
  color: red;
